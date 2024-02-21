@@ -1,0 +1,9 @@
+<h2>All Events</h2>
+<ul>
+  <% @iterable_events.each do |event| %>
+    <li>
+      <%= link_to event.title, iterable_event_path(event['id']) %>
+    </li>
+  <% end %>
+</ul>
+
